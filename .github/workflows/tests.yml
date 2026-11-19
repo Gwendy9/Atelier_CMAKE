@@ -29,3 +29,17 @@ jobs:
           cmake ..
           make
           ./src/calculator add 10 5
+  jobs:
+  test-1:
+    name: Test 1
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: <commande du test 1>
+
+  test-2:
+    name: Test 2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: <commande du test 2>
