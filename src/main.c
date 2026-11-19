@@ -32,4 +32,13 @@ int main(int argc, char *argv[]){
 	return 0;
 }
 
+	else if (strcmp(argv[1], "car") == 0)
+{
+    if (argc != 3) {
+        printf("Usage : calculator car <nombre>\n");
+        return 1;
+    }
+    int a = atoi(argv[2]);
+    printf("%d\n", carre(a));
+}
 		
